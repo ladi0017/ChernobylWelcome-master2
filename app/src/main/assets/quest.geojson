@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reactor to Pripyat centre"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [          
+		[
+            51.390015,
+            30.097019
+          ],
+          [
+            51.406159,
+            30.057282
+          ]
+        ]
+      }
+    }
+  ]
+}

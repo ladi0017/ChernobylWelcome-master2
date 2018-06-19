@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/landmarkDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/landmarkDetailsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/landmarkDetailsTitle"
+        android:layout_alignLeft="@+id/landmarkDetailsTitle"
+        android:layout_alignStart="@+id/landmarkDetailsTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/landmarkDetailsGoToMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to map"
+        android:layout_below="@+id/landmarkDetailsDescription"
+        android:layout_alignLeft="@+id/landmarkDetailsDescription"
+        android:layout_alignStart="@+id/landmarkDetailsDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/landmarkDetailsGoToMapButton"
+        android:layout_alignLeft="@+id/landmarkDetailsGoToMapButton"
+        android:layout_alignStart="@+id/landmarkDetailsGoToMapButton">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/landmarkDetailsImagesContainer"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</RelativeLayout>
